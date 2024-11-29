@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { WebApp } from '@twa-dev/sdk';
+import WebApp from '@twa-dev/sdk';
 import { Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Dashboard from './pages/Dashboard';
@@ -7,6 +7,10 @@ import AdminPanel from './pages/AdminPanel';
 import Pricing from './pages/Pricing';
 import Settings from './pages/Settings';
 import Footer from './components/Footer';
+import './styles/main.css';
+import './styles/settings.css';
+import './styles/admin.css';
+import './styles/pricing.css';
 
 function App() {
   useEffect(() => {

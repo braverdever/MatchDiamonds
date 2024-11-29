@@ -2,7 +2,7 @@ import React from 'react';
 
 function Pricing() {
   return (
-    <div className="pricing">
+    <div className="pricing-page">
       <h1>Choose Your Plan</h1>
       
       <div className="pricing-grid">

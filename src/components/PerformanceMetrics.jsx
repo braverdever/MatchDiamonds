@@ -3,19 +3,19 @@ import React from 'react';
 function PerformanceMetrics() {
   return (
     <div className="metrics-container">
-      <h2>Performance Metrics</h2>
+      <h2 className="section-title">Performance Metrics</h2>
       <div className="metrics-grid">
         <div className="metric-card">
-          <h3>Win Rate</h3>
-          <p>76%</p>
+          <span className="metric-label">Win Rate</span>
+          <span className="metric-value">76%</span>
         </div>
         <div className="metric-card">
-          <h3>Avg. Trade</h3>
-          <p>$123.45</p>
+          <span className="metric-label">Avg. Trade</span>
+          <span className="metric-value">$123.45</span>
         </div>
         <div className="metric-card">
-          <h3>Total Trades</h3>
-          <p>156</p>
+          <span className="metric-label">Total Trades</span>
+          <span className="metric-value">156</span>
         </div>
       </div>
     </div>
