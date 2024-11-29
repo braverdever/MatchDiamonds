@@ -2,7 +2,6 @@
   "name": "trading-bot-mini-app",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/your-repo-name",
   "dependencies": {
     "@twa-dev/sdk": "^6.9.1",
     "react": "^18.2.0",
