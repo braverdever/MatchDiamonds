@@ -35,7 +35,6 @@ function AdminPanel() {
         <div className="admin-section">
           <div className="section-header">
             <h2>TradingView Webhook</h2>
-            <button className="admin-action-btn">Add Webhook</button>
           </div>
           <WebhookSetup />
         </div>
