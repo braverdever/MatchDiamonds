@@ -1,0 +1,25 @@
+.footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background: var(--card-background);
+  border-top: 1px solid var(--background-color);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-links a, .footer-social a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+  color: var(--primary-color);
+} 
