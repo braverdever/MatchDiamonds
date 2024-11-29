@@ -7,18 +7,16 @@
       "config": { "distDir": "build" }
     }
   ],
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "headers": { "cache-control": "s-maxage=31536000,immutable" },
-      "dest": "/static/$1"
-    },
-    { "src": "/favicon.ico", "dest": "/favicon.ico" },
-    { "src": "/manifest.json", "dest": "/manifest.json" },
-    { "src": "/robots.txt", "dest": "/robots.txt" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
   "headers": [
+    {
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "cache-control",
+          "value": "s-maxage=31536000,immutable"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [
@@ -28,5 +26,11 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/favicon.ico", "destination": "/favicon.ico" },
+    { "source": "/manifest.json", "destination": "/manifest.json" },
+    { "source": "/robots.txt", "destination": "/robots.txt" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 } 
